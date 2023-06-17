@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender {
+    background-color: #000;
+    color: lightgray;
+    width: 45rem;
+    height: 52rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.month {
+    background-color: darkgoldenrod;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 18rem;
+}
+
+.month h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+.month p {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin-top: 0.6rem;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: center;
+}
+
+.weekdays div {
+    margin: 0.5rem 1.6rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.weekdays div:hover {
+    opacity: 0.5;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    margin: 3px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.days .empty:hover {
+    border: none;
+}
+
+.days div:hover {
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+}
+
+.days .today {
+    background-color: cadetblue;
+    color: aliceblue;
+    border-radius: 1rem;
+}
